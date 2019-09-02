@@ -1,0 +1,50 @@
+.body{
+    /* 1em=16px */
+font-size: 1em;
+}
+
+.header-container {
+    background: url(images/Chalkboard-background_dark) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.logo {
+    display: inline;
+}
+
+.child {
+    border: 1px solid black;
+    /* width: 23%;
+    justify-content: space-between; */
+    flex-grow: 1;
+    margin-right: 16px;
+    border-radius: 5px;
+    display: flex;
+
+}
+
+.image-container img {
+    height: 150px;
+}
+
+/* phones */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .super-long-content {
+        display: none;
+    }   
+}
+
+@media screen and max-width
