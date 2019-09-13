@@ -19,7 +19,7 @@ h2 {
     text-align: center;   
 }
 
-.header-container {
+header {
     background-color: black;
     background-image: url('../images/Chalkboard-background_dark.jpg');
     background-position: center;
@@ -40,9 +40,15 @@ h2 {
 
 }
 
-.logo {
-    width: 80px;
-    height: 20px;
+/* .nav-container #order-button {
+    background-color: red;
+    padding: 20px;
+} */
+
+header .logo img{
+    width: 230px;
+    float: left;
+    padding-inline-start: 2%;
   
 }
 
@@ -58,8 +64,8 @@ h2 {
     color: white; 
 }
 
-.items, .pasta-items {
-    border: 1px solid white;
+.pizza-category, .pasta-category, .salad-category {
+    /* border: 1px solid white; */
     text-align: center;
     color: white;
     justify-content: space-between;
@@ -70,13 +76,16 @@ h2 {
     flex-wrap: wrap;
     
     font-family: NexaBold;
-    margin-right: 4%;
-    margin-left: 4%;
+    margin-right: 8%;
+    margin-left: 8%;
 }
 
-.items>*, .pasta-items>* {
-    flex: 0 0 25%;   
-    
+.pizza-category>*, .pasta-category>*, .salad-category>* {
+    flex: 0 0 25%;      
+}
+
+.item img:hover {
+    transform: scale(1.1);
 }
 
 .item-name {
@@ -96,8 +105,12 @@ h2 {
     font-size: 1em;
 }
 
+.item{
+    padding-bottom: 5%;
+}
 
-.items img {
+
+.pizza-category img, .pasta-category img, .salad-category img {
     width: 70%;
     padding: 3%;
     /* display: block; */
@@ -105,9 +118,7 @@ h2 {
     text-align: center;
 }
 
-/* .image-container img {
-    height: 150px;
-} */ */
+
 
  @font-face {
     font-family: NexaRustSlab-BlackShadow01;
