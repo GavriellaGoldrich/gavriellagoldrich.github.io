@@ -1,40 +1,129 @@
-.body{
+body {
     /* 1em=16px */
-font-size: 1em;
+  font-family: NexaLight;
+  font-size: 1em;
+  color: white;
+}
+
+div a {
+    text-decoration: none;
+    color: white;
+}
+
+h2 {
+    font-family: NexaRustSlab-BlackShadow01; 
+    padding-top: 3%;
+    font-size: 4em;
+    letter-spacing: 5px;
+    color: white;
+    text-align: center;   
 }
 
 .header-container {
-    background: url(images/Chalkboard-background_dark) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background-color: black;
+    background-image: url('../images/Chalkboard-background_dark.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    color: white; 
 }
 
 .nav-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding: 2%;
+    font-size: 1.5em;
+    color: white;
+    font-family: NexaBold;
+    text-decoration: none;
+
 }
 
 .logo {
-    display: inline;
+    width: 80px;
+    height: 20px;
+  
 }
 
-.child {
-    border: 1px solid black;
-    /* width: 23%;
-    justify-content: space-between; */
-    flex-grow: 1;
-    margin-right: 16px;
+.slideshow {
+    width: 100%;
+}
+
+#menu {
+    background-image: url('../images/Chalkboard-background_dark.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white; 
+}
+
+.items, .pasta-items {
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+    justify-content: space-between;
+
     border-radius: 5px;
     display: flex;
-
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    font-family: NexaBold;
+    margin-right: 4%;
+    margin-left: 4%;
 }
 
-.image-container img {
+.items>*, .pasta-items>* {
+    flex: 0 0 25%;   
+    
+}
+
+.item-name {
+    font-family: NexaBold;
+    font-size: 1.5em;
+    padding-bottom: 3%;
+}
+
+.item-description {
+    font-family: NexaLight;
+    font-size: 1em; 
+    padding-bottom: 2%;
+}
+
+.item-price {
+    font-family: NexaBold;
+    font-size: 1em;
+}
+
+
+.items img {
+    width: 70%;
+    padding: 3%;
+    /* display: block; */
+    margin: auto;
+    text-align: center;
+}
+
+/* .image-container img {
     height: 150px;
+} */ */
+
+ @font-face {
+    font-family: NexaRustSlab-BlackShadow01;
+    src: url(fonts/NexaRustSlab-BlackShadow01-Free-webfont.woff);
+ }
+
+@font-face {
+    font-family: NexaBold;
+    src: url(fonts/NexaBold.woff);
 }
+
+@font-face {
+    font-family: NexaLight;
+    src: url(fonts/NexaLight.woff);
+}
+
 
 /* phones */
 @media screen and (max-width: 768px) {
