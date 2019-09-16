@@ -78,31 +78,21 @@ function makePizzaDiv(pizza) {
 const pastas = [
 
     {
-    name: 'Alfredo',
-    description: 'description goes here',
+    name: 'Spaghetti',
     price: '$10.99',
-    imgSrc: 'images/pizza.png'
+    imgSrc: 'images/spaghetti.png'
     },
     
     {
-    name: 'Alfredo',
-    description: 'description goes here',
+    name: 'fusilli',
     price: '$10.99',
-    imgSrc: 'images/pizza.png'
+    imgSrc: 'images/fussili.png'
     },
 
     {
-    name: 'Alfredo',
-    description: 'description goes here',
+    name: 'Ziti',
     price: '$10.99',
-    imgSrc: 'images/pizza.png'
-    },
-
-    {
-    name: 'Alfredo',
-    description: 'description goes here',
-    price: '$10.99',
-    imgSrc: 'images/pizza.png'
+    imgSrc: 'images/ziti.png'
     },
 
     ]
@@ -115,7 +105,6 @@ function makePastaDiv(pasta) {
     $('.pasta-category').append('<div class="item">'
     + '<img src="' +pasta.imgSrc +'">'
     + '<div class="item-name"> ' +pasta.name +' </div>'
-    + '<div class="item-description"> ' +pasta.description +' </div>'
     + '<div class="item-price"> ' +pasta.price +' </div>'
     + '</div>')
 }
