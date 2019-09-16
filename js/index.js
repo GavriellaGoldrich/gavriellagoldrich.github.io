@@ -2,7 +2,28 @@
 const pizzas = [
     
     {
-    name: 'Margherita',
+    name: 'Cheese',
+    description: 'description goes here',
+    price: '10.99',
+    imgSrc: 'images/pizza.png'
+    },
+
+    {
+    name: 'Mushroom',
+    description: 'description goes here',
+    price: '3.45',
+    imgSrc: 'images/mushroom_pizza.png'
+    },
+
+    {
+    name: 'White',
+    description: 'description goes here',
+    price: '3.45',
+    imgSrc: 'images/white_pizza.png'
+    },
+
+    {
+    name: 'Tomato Mozzerella Basil',
     description: 'description goes here',
     price: '3.45',
     imgSrc: 'images/pizza.png'
@@ -12,35 +33,14 @@ const pizzas = [
     name: 'Margherita',
     description: 'description goes here',
     price: '3.45',
-    imgSrc: 'images/pizza.png'
+    imgSrc: 'images/margherita.png'
     },
 
     {
-    name: 'Margherita',
+    name: 'Vegetable',
     description: 'description goes here',
     price: '3.45',
-    imgSrc: 'images/pizza.png'
-    },
-
-    {
-    name: 'Margherita',
-    description: 'description goes here',
-    price: '3.45',
-    imgSrc: 'images/pizza.png'
-    },
-
-    {
-    name: 'Margherita',
-    description: 'description goes here',
-    price: '3.45',
-    imgSrc: 'images/pizza.png'
-    },
-
-    {
-    name: 'Margherita',
-    description: 'description goes here',
-    price: '3.45',
-    imgSrc: 'images/pizza.png'
+    imgSrc: 'images/vegetable.png'
     },
 
     {
@@ -121,41 +121,42 @@ function makePastaDiv(pasta) {
 }
 
 
-// // SALAD //
-// const salad = [
-
-//     {
-//     name: 'Caesar',
-//     description: 'description goes here',
-//     price: '$10.99',
-//     imgSrc: 'images/pizza.png'
-//     },
+// SALAD //
+const salads = [
     
-//     {
-//     name: 'House Salad',
-//     description: 'description goes here',
-//     price: '$10.99',
-//     imgSrc: 'images/pizza.png'
-//     },
+    {
+    name: 'Greek',
+    description: 'description goes here',
+    price: '7.50',
+    imgSrc: 'images/greek_salad.png'
+    },
 
-//     {
-//     name: 'Balsamic',
-//     description: 'description goes here',
-//     price: '$10.99',
-//     imgSrc: 'images/pizza.png'
-//     },
+    {
+    name: 'Harvest',
+    description: 'description goes here',
+    price: '6.25',
+    imgSrc: 'images/harvest_salad.png'
+    },
 
-//     ]
+    {
+    name: 'House',
+    description: 'description goes here',
+    price: '7.50',
+    imgSrc: 'images/house_salad.png'
+    },
+    
+    ]
 
-// var items = $('#salad'), salad;
-// salads.forEach(makeSaladDiv)
+var items = $('#salad'), salad;
+salads.forEach(makeSaladDiv)
 
-// function makeSaladDiv(salad) {
+function makeSaladDiv(salad) {
 
-//     $('.salad-category').append('<div class="item">'
-//     + '<img src="' +salad.imgSrc +'">'
-//     + '<div class="item-name"> ' +salad.name +' </div>'
-//     + '<div class="item-description"> ' +salad.description +' </div>'
-//     + '<div class="item-price"> ' +salad.price +' </div>'
-//     + '</div>')
-// }
+    $('.salad-category').append('<div class="item">'
+    + '<img src="' +salad.imgSrc +'">'
+    + '<div class="item-name"> ' +salad.name +' </div>'
+    + '<div class="item-description"> ' +salad.description +' </div>'
+    + '<div class="item-price"> ' +salad.price +' </div>'
+    + '</div>')
+    
+}

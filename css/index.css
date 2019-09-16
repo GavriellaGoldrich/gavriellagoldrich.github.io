@@ -25,19 +25,20 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white; 
+    /* color: white;  */
 }
 
 .nav-container {
     display: flex;
     flex-direction: row;
+    align-content: flex-end;
     justify-content: space-evenly;
     padding: 2%;
     font-size: 1.5em;
     color: white;
     font-family: NexaBold;
     text-decoration: none;
-
+    /* text-align: center; */
 }
 
 /* .nav-container #order-button {
@@ -49,6 +50,7 @@ header .logo img{
     width: 230px;
     float: left;
     padding-inline-start: 2%;
+    position: absolute;
   
 }
 
@@ -109,6 +111,22 @@ header .logo img{
     padding-bottom: 5%;
 }
 
+#pasta {
+    background-color: white;
+}
+
+#pasta h2{
+    color: black;
+}
+
+.instructions {
+    color:#bd202e;
+    font-size: 2em;
+    font-family: NexaBold;
+    text-align: center;
+    padding: 2em;
+}
+
 
 .pizza-category img, .pasta-category img, .salad-category img {
     width: 70%;
@@ -116,6 +134,42 @@ header .logo img{
     /* display: block; */
     margin: auto;
     text-align: center;
+}
+
+#order-container {
+    background-color: #bd202e;
+    height: 100px;
+    padding: 3.5%;
+    text-align: center;
+}
+
+button {
+    height: 80px;
+    width: 300px;
+    border-radius: 24px;
+    padding: 30px;
+    font-family: NexaBold;
+    color: white;
+    font-size: 1.3em;
+    background-color: #bd202e;
+    border: 3px solid white;
+}
+
+button:hover {
+    color:  #bd202e;
+    background-color:white;
+}
+
+#company-info {
+    background-color: #7c1f2e;
+    height: 800px;
+
+}
+
+footer {
+    background-color: black;
+    padding: 1.5%;
+    font-family: NexaBold;
 }
 
 
