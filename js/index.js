@@ -109,8 +109,7 @@ function makePastaDiv(pasta) {
     + '</div>')
 }
 
-
-// SALAD //
+ // SALAD //
 const salads = [
     
     {
