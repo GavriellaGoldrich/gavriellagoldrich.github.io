@@ -37,61 +37,91 @@ header {
     font-family: NexaBold;
     text-decoration: none;
 }
- .logo img{
-    width:30%;
-} 
+
 .nav {
-    margin-left:7%;
+    margin-left:4%;
 }
 
 .logo {    
-    position: absolute;
+    position: relative;
     z-index: 100;
-    top: -4px;
-    width: 54%;
+    top: 25px;
+    left: -10px;
+    width: 250px;
+    height: 150px;
 }
 
 .nav-container {
     display: flex;
     justify-content: flex-end;
-    width: 64%;
+    width: 94%;
+    height: 85.875px;
     align-items: center;
 }
 
 #order-button {
-    margin-left:10%;
+    margin-left:3%;
+    margin-right: 3%;
     background-color:#bd202e;
     padding: 2%;
 }
 
-#social {
-   width:20%;
+#order-button:hover {
+    opacity: 0.9;
 }
 
-.instagram {
-    
+#social-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 13%;
 }
 
-/* .nav-container #order-button {
-    background-color: red;
-    padding: 20px;
-} */
+.social img {
+    padding-left: .5em;
+    padding-right: .5em;
+    width: 1em;
+}
 
-/* header .logo img{
-    width: 230px;
-    float: left;
-    padding-inline-start: 2%;
-    position: absolute;
-  
-} */
+.social img:hover {
+    opacity: 0.9;
+}
 
+.kosher img {
+    padding-left: 1em;
+    width: 5em;
+}
 
 .slideshow-container {
-    height: 48%;
+    position: relative;
+    margin: 0 auto; 
+    height: 728px;
 }
 
 .slideshow {
+    height: 728px;
+}
+
+.mySlides img {
+    object-fit: cover;
     width: 100%;
+}
+
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;s
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
 }
 
 #menu {
@@ -241,7 +271,7 @@ button:hover {
     background-color:white;
 }
 
-#company-info {
+.company-info {
     background-color: #7c1f2e;
     height: 800px;
     padding: 1.5%;
