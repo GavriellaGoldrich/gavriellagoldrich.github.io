@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Giddy's Pizzeria</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/index.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
@@ -9,12 +10,12 @@
     <body>
         <header>   
             <div class="nav-container">
-                    <div class= "logo"><img src="images/giddy's_logo.png" a href="index.html" width="225px" height="125px"></a></div>
-                <div class="nav"><a href="#">Menu</a></div>
-                <div class="nav"><a href="#">Our Story</a></div>
+                <div class= "logo"><img src="images/giddy's_logo.png" a href="index.html" width="225px" height="125px"></a></div>
+                <div class="nav"><a href="#jump-menu-anchor">Menu</a></div>
+                <div class="nav"><a href="our-story.html">Our Story</a></div>
                 <div class="nav" ><a href="#jump-footer-contact">Contact</a></div>
                 <div class="nav"><a href="#">Catering</a></div>
-                <div id="order-button"><a href="#">Order Online</a></div>
+                <div id="order-button"><a href="https://www.grubhub.com/restaurant/giddys-pizzeria-233-route-18-east-brunswick/321706">Order Online</a></div>
              
                 <div id="social-container">
                     <div class="social"><a href="https://www.instagram.com/giddyspizzeria/"><img src ="images/social-media/IG.png" alt="instagram"></a></div>
@@ -32,7 +33,7 @@
                 <img class= "slideshow" src="images/slider/slider_1.jpg">
             </div>
             <div class="mySlides fade">
-                <img class= "slideshow" src="images/slider/slider_2.jpg">
+                <img class= "slideshow" src="images/slider/slider_1.jpg">
             </div>
             <div class="mySlides fade">
                  <img class= "slideshow" src="images/slider/slider_1.jpg">
@@ -41,7 +42,7 @@
     
         <div id="menu">
             <div id="pizza">
-                <h2>Pizza</h2>
+                <h2 id="jump-menu-anchor">Pizza</h2>
                 <div class="pizza-category">
                     <!-- <div class="item 1">
                         <img src="images/pizza.png">
@@ -100,9 +101,28 @@
             </div>    
         </div>
         <div id="order-container">
-            <button class="order">Order Now</button>
+            <button class="order"><a href="https://www.grubhub.com/restaurant/giddys-pizzeria-233-route-18-east-brunswick/321706">Order Now</a></button>
         </div>
         <div class="company-info" id="jump-footer-contact">
+            <div id="address">
+                <div class="info-header"> Visit Us</div>
+                <div class="info-details">233 NJ-18, East Brunswick • NJ</div>    
+            </div>
+            <div class= "logo-2"><img src="images/full color red_black_white.png"></div>
+            <div id="hours">
+                    <div class="info-header"> Hours</div>
+                    <div class="info-details"> Sunday - Thursday
+                            <div class="info-details-time">11am - 9pm</div>
+                    </div>    
+                    <div class="info-details"> Friday
+                            <div class="info-details-time">11am - 3pm</div>
+                    </div> 
+                    <div class="info-details"> Saturday
+                            <div class="info-details-time">Closed</div>
+                    </div> 
+            </div>
+            
+            
         
         </div>
         <footer>Giddy's Pizzeria &copy;2019</footer>

@@ -1,0 +1,136 @@
+body {
+    font-family: NexaBold;
+    font-size: 1em;
+    color: white;
+    background-image: url('../images/Chalkboard-background_dark.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+    color: white;
+    font-family: NexaBold;
+    text-decoration: none;
+}
+
+.nav {
+    margin-left:4%;
+}
+
+.nav:hover {
+    opacity: 0.8;
+}
+
+.logo {    
+    position: relative;
+    z-index: 100;
+    top: 25px;
+    left: -10px;
+    width: 250px;
+    height: 150px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 94%;
+    height: 85.875px;
+    align-items: center;
+}
+
+h2 {
+    font-family: NexaRustSlab-BlackShadow01; 
+    padding: 5%;
+    font-size: 4em;
+    letter-spacing: 5px;
+    color: white;
+    text-align: center;   
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+}
+
+/* #bullet img {
+    height: 30px;
+} */
+
+#order-button {
+    margin-left:3%;
+    margin-right: 3%;
+    background-color:#bd202e;
+    height: 85.88px;
+}
+
+#order-button:hover {
+    background-color:#a11d28;
+}
+
+#social-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 13%;
+}
+
+.social img {
+    padding-left: .5em;
+    padding-right: .5em;
+    width: 1em;
+}
+
+.social img:hover {
+    opacity: 0.9;
+}
+
+.kosher img {
+    padding-left: 1em;
+    width: 5em;
+}
+
+.story {
+    font-size: 1.1em;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-bottom: 10%;
+    line-height:22px;
+}
+
+#order-container {
+    background-color: #bd202e;
+    height: 100px;
+    padding: 3.5%;
+    text-align: center;
+}
+
+button {
+    height: 80px;
+    width: 300px;
+    border-radius: 24px;
+    padding: 30px;
+    font-family: NexaBold;
+    color: white;
+    font-size: 1.3em;
+    background-color: #bd202e;
+    border: 3px solid white;
+}
+
+button:hover {
+    color: #bd202e;
+    background-color:white;
+    border: 3px solid #bd202e;
+}
+
+button a:hover {
+    color: #bd202e;
+}
+

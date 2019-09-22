@@ -84,7 +84,7 @@ const pastas = [
     },
     
     {
-    name: 'fusilli',
+    name: 'Fusilli',
     price: '$10.99',
     imgSrc: 'images/fussili.png'
     },
