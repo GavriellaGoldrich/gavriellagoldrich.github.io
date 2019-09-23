@@ -3,58 +3,65 @@ const pizzas = [
     
     {
     name: 'Cheese',
-    description: 'description goes here',
-    price: '10.99',
-    imgSrc: 'images/pizza.png'
+    description: 'Basic never tasted so delicious!',
+    price: '$10.99',
+    imgSrc: 'images/pizza/pizza.png'
     },
 
     {
     name: 'Mushroom',
-    description: 'description goes here',
-    price: '3.45',
-    imgSrc: 'images/mushroom_pizza.png'
+    description: 'Mushrooms with Mozzarella & House Tomato Sauce',
+    price: '$3.45',
+    imgSrc: 'images/pizza/mushroom.png'
     },
 
     {
     name: 'White',
-    description: 'description goes here',
-    price: '3.45',
-    imgSrc: 'images/white_pizza.png'
+    description: 'Ricotta, Mozzarella & Basil',
+    price: '$3.45',
+    imgSrc: 'images/pizza/white.png'
     },
 
     {
-    name: 'Tomato Mozzerella Basil',
-    description: 'description goes here',
-    price: '3.45',
-    imgSrc: 'images/pizza.png'
+    name: 'Buffalo',
+    description: 'Breaded Eggplant, Blue Cheese, Buffalo Sauce & Garlic Crust with Mozzarella',
+    price: '$3.45',
+    imgSrc: 'images/pizza/buffalo.png'
     },
 
     {
     name: 'Margherita',
-    description: 'description goes here',
-    price: '3.45',
-    imgSrc: 'images/margherita.png'
+    description: 'Sliced Tomatoes, Fresh Mozzarella & Basil',
+    price: '$3.45',
+    imgSrc: 'images/pizza/margherita.png'
     },
 
     {
     name: 'Vegetable',
-    description: 'description goes here',
-    price: '3.45',
-    imgSrc: 'images/vegetable.png'
+    description: 'Seasoned Tomatoes, Peppers & Onions with Mozzarella & House Tomato Sauce',
+    price: '$3.45',
+    imgSrc: 'images/pizza/vegetable.png'
     },
 
     {
-    name: 'Margherita',
-    description: 'description goes here',
-    price: '3.45',
-    imgSrc: 'images/pizza.png'
+    name: 'Taco',
+    description: 'Tortilla Chips, Black Beans, Red Onion, Green Pepper & Spicy Mayo',
+    price: '$3.45',
+    imgSrc: 'images/pizza/taco_pizza.png'
     },
 
     {
-    name: 'Margherita',
-    description: 'description goes here',
-    price: '3.45',
-    imgSrc: 'images/pizza.png'
+    name: 'Broccoli',
+    description: 'Broccoli with Pesto, Feta & Mozzarella',
+    price: '$10.99',
+    imgSrc: 'images/pizza/broccoli-pesto.png'
+    },
+
+    {
+    name: 'Stuffed Crust',
+    description: 'Veggie Ground Meat, Mushrooms & Onions in a stuffed crust with cheese',
+    price: '$3.45',
+    imgSrc: 'images/pizza/stuffed_crust.png'
     },
 
     ]
@@ -80,19 +87,19 @@ const pastas = [
     {
     name: 'Spaghetti',
     price: '$10.99',
-    imgSrc: 'images/spaghetti.png'
+    imgSrc: 'images/pasta/spaghetti.png'
     },
     
     {
     name: 'Fusilli',
     price: '$10.99',
-    imgSrc: 'images/fussili.png'
+    imgSrc: 'images/pasta/fussili.png'
     },
 
     {
     name: 'Ziti',
     price: '$10.99',
-    imgSrc: 'images/ziti.png'
+    imgSrc: 'images/pasta/ziti.png'
     },
 
     ]
@@ -109,28 +116,57 @@ function makePastaDiv(pasta) {
     + '</div>')
 }
 
+
+
+// SAUCE //
+const sauces = [
+
+    {
+    name: 'Name',
+    price: '$10.99',
+    imgSrc: 'images/pasta/spaghetti.png'
+    },
+
+    ]
+
+    var items = $('#pasta'), pasta;
+    pastas.forEach(makePastaDiv)
+    
+    function makePastaDiv(pasta) {
+    
+        $('.pasta-category').append('<div class="item">'
+        + '<img src="' +pasta.imgSrc +'">'
+        + '<div class="item-name"> ' +pasta.name +' </div>'
+        + '<div class="item-price"> ' +pasta.price +' </div>'
+        + '</div>')
+    }
+
+
+
+
+
  // SALAD //
 const salads = [
     
     {
     name: 'Greek',
-    description: 'description goes here',
+    description: 'Romaine Lettuce, Tomato, Red Onion, Yellow Pepper, Black Olives & Fresh Mozzarella',
     price: '7.50',
-    imgSrc: 'images/greek_salad.png'
+    imgSrc: 'images/salad/greek_salad.png'
     },
 
     {
     name: 'Harvest',
-    description: 'description goes here',
+    description: 'Baby Spinach, Apples, Walnuts & Feta Cheese with a Balsamic Vinagrette',
     price: '6.25',
-    imgSrc: 'images/harvest_salad.png'
+    imgSrc: 'images/salad/harvest_salad.png'
     },
 
     {
     name: 'House',
-    description: 'description goes here',
+    description: 'Cabbage, Beets, Cucumber & Shredded Carrots with a Sesame Ginger Dressing',
     price: '7.50',
-    imgSrc: 'images/house_salad.png'
+    imgSrc: 'images/salad/house_salad.png'
     },
     
     ]

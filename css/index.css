@@ -24,7 +24,6 @@
     }
 
     header {
-        background-color: black;
         background-image: url('../images/Chalkboard-background_dark.jpg');
         background-position: center;
         background-repeat: no-repeat;
@@ -37,6 +36,9 @@
         color: white;
         font-family: NexaBold;
         text-decoration: none;
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
 
     .nav {
@@ -101,6 +103,7 @@
         position: relative;
         margin: 0 auto; 
         height: 728px;
+        margin-top: 85.875px;
     }
 
     .slideshow {
@@ -114,7 +117,7 @@
 
     .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;s
+    -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
     }
@@ -137,8 +140,7 @@
     }
 
 
-    .pizza-category, .pasta-category, .salad-category {
-        /* border: 1px solid white; */
+    .pizza-category, .salad-category {
         text-align: center;
         justify-content: space-between;
 
@@ -150,6 +152,19 @@
         font-family: NexaBold;
         margin-right: 12%;
         margin-left: 12%;
+    }
+
+    .pasta-category {
+        text-align: center;
+        justify-content: space-between;
+
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-family: NexaBold; 
+        margin-right: 18%;
+        margin-left: 18%;
     }
 
     .pizza-category>*, .pasta-category>*, .salad-category>* {
@@ -169,7 +184,8 @@
     .item-description {
         font-family: NexaLight;
         font-size: 1em; 
-        padding-bottom: 2%;
+        padding-bottom: 4%;
+        line-height: 20px;
     }
 
     .item-price {
@@ -179,10 +195,13 @@
 
     .item{
         padding-bottom: 5%;
+        padding-left: 0.5%;
+        padding-right: 0.5%;
     }
 
     #pasta {
         background-color: white;
+        color: black;
     }
 
     #pasta h2 {
@@ -295,7 +314,8 @@
 
     .info-header {
         font-family: NexaBold;
-        font-size: 2em;
+        text-transform: uppercase; 
+        font-size: 1.5em;
         padding-bottom: 10%;
         text-decoration: underline dotted #bd202e;
         text-underline-position: under;
