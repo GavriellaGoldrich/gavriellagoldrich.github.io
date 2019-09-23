@@ -1,5 +1,5 @@
- /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+ /* Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  */
 
     body {
     font-family: NexaBold;
@@ -104,6 +104,7 @@
         margin: 0 auto; 
         height: 728px;
         margin-top: 85.875px;
+        width: 100%;
     }
 
     .slideshow {
@@ -132,6 +133,31 @@
     to {opacity: 1}
     }
 
+    .nav-dots {
+        position: relative;
+        z-index: 100;
+        top: -411px;
+        left: 70px;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        padding: 3px;
+        margin: 11px 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        opacity: 0.7;
+        display: block;
+        transition: background-color 0.6s ease;
+    }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+    }
+
+
     #menu {
         background-image: url('../images/Chalkboard-background_dark.jpg');
         background-position: center;
@@ -154,7 +180,7 @@
         margin-left: 12%;
     }
 
-    .pasta-category {
+    .pasta-category, .sauce-category {
         text-align: center;
         justify-content: space-between;
 
@@ -162,12 +188,14 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+
         font-family: NexaBold; 
         margin-right: 18%;
         margin-left: 18%;
+        padding-bottom: 4%;
     }
 
-    .pizza-category>*, .pasta-category>*, .salad-category>* {
+    .pizza-category>*, .pasta-category>*, .sauce-category>*, .salad-category>* {
         flex: 0 0 25%;      
     }
 
@@ -212,12 +240,14 @@
         color: black;
     }
 
-    #pasta .item {
+    /* #pasta .item {
         padding-bottom: 0%;
-    }
+    } */
 
     .instructions {
         text-align: center;
+        padding-top: 4%
+        padd
     }
 
     .step {
@@ -259,9 +289,10 @@
 
     .toppings {
         padding: 3%;
+        padding-bottom: 8%
     }
 
-    .pizza-category img, .pasta-category img, .salad-category img {
+    .pizza-category img, .pasta-category img, .salad-category img, .sauce-category img {
         width: 70%;
         padding: 3%;
         /* display: block; */

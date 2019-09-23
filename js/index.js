@@ -122,27 +122,32 @@ function makePastaDiv(pasta) {
 const sauces = [
 
     {
-    name: 'Name',
-    price: '$10.99',
-    imgSrc: 'images/pasta/spaghetti.png'
+    name: 'Alfredo',
+    imgSrc: 'images/sauce/alfredo.png'
+    },
+
+    {
+    name: 'Rosa Rosa',
+    imgSrc: 'images/sauce/rosa-rosa.png'
+    },
+
+    {
+    name: 'Pesto',
+    imgSrc: 'images/sauce/pesto.png'
     },
 
     ]
 
-    var items = $('#pasta'), pasta;
-    pastas.forEach(makePastaDiv)
-    
-    function makePastaDiv(pasta) {
-    
-        $('.pasta-category').append('<div class="item">'
-        + '<img src="' +pasta.imgSrc +'">'
-        + '<div class="item-name"> ' +pasta.name +' </div>'
-        + '<div class="item-price"> ' +pasta.price +' </div>'
-        + '</div>')
-    }
+var items = $('#sauce'), sauce;
+sauces.forEach(makeSauceDiv)
 
+function makeSauceDiv(sauce) {
 
-
+    $('.sauce-category').append('<div class="item">'
+    + '<img src="' +sauce.imgSrc +'">'
+    + '<div class="item-name"> ' +sauce.name +' </div>'
+    + '</div>')
+}
 
 
  // SALAD //
@@ -186,20 +191,56 @@ function makeSaladDiv(salad) {
 }
 
 
+var slideIndex = 1;
+
+var myTimer;
+
+var slideshowContainer;
 
 
+window.addEventListener("load",function() {
+    showSlides(slideIndex);
+    myTimer = setInterval(function(){plusSlides(1)}, 4000);
+    slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+    slideshowContainer.addEventListener('mouseenter', pause)
+    slideshowContainer.addEventListener('mouseleave', resume)
+})
 
-var slideIndex = 0;
-showSlides();
+// NEXT AND PREVIOUS CONTROL
+function plusSlides(n){
+  clearInterval(myTimer);
+  if (n < 0){
+    showSlides(slideIndex -= 1);
+  } else {
+   showSlides(slideIndex += 1); 
+  }
+  if (n === -1){
+    myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+  } else {
+    myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  }
+}
 
-function showSlides() {
+//Controls the current slide and resets interval if needed
+function currentSlide(n){
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n){
   var i;
   var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+      slides[i].style.display = "none";
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2500); // Change image every 2 seconds
+  dots[slideIndex-1].className += " active";
 }
+

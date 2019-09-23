@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Catering</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/catering.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <header>   
+            <div class="nav-container">
+                <div class= "logo"><a href="index.html"><img src="images/giddy's_logo.png" width="225px" height="125px"></a></div>
+                <div class="nav"><a href="index.html#jump-menu-anchor">Menu</a></div>
+                <div class="nav"><a href="our-story.html">Our Story</a></div>
+                <div class="nav" ><a href="index.html#jump-footer-contact">Contact</a></div>
+                <div class="nav"><a href="catering.html">Catering</a></div>
+                <div id="order-button"><a href="https://www.grubhub.com/restaurant/giddys-pizzeria-233-route-18-east-brunswick/321706">Order Online</a></div>
+             
+                <div id="social-container">
+                    <div class="social"><a href="https://www.instagram.com/giddyspizzeria/"><img src ="images/social-media/IG.png" alt="instagram"></a></div>
+                    <div class="social"><a href="https://www.facebook.com/GiddysPizzeria/"><img src ="images/social-media/FB.png" alt="facebook"></a></div>
+                    <div class="social"><a href="https://twitter.com/giddyspizzeria?lang=en"><img src ="images/social-media/Twitter.png" alt="facebook"></a></div>
+                </div>
+
+                <div class="kosher"><img src ="images/social-media/chalav-yisrael.png" alt="chalav-yisrael"></div>
+            </div>
+        </header>
+        <div id="catering-container">
+            <h2>Catering Inquiries</h2>
+            <form action="action_page.php">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="First Name..">
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Last Name..">
+            
+                <label for="people">How many people are you looking to cater for?</label>
+                <select id="amount-ppl" name="amount-ppl">
+                    <option value="option1">0-10</option>
+                    <option value="option2">10-50</option>
+                    <option value="option3">50-100</option>
+                    <option value="option4">100-200+</option>
+                </select>
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Share some details about your event!" style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+            
+            </form>
+        </div>  
+        <div id="order-container">
+            <button class="order"><a href="https://www.grubhub.com/restaurant/giddys-pizzeria-233-route-18-east-brunswick/321706">Order Now</a></button>
+        </div>   
+         <footer>Giddy's Pizzeria &copy;2019</footer>   
+    </body>
+</html>
