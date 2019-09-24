@@ -42,7 +42,7 @@
     }
 
     .nav {
-        margin-left:4%;
+        margin-left:3%;
     }
 
     .nav:hover {
@@ -71,6 +71,7 @@
         margin-right: 3%;
         background-color:#bd202e;
         height: 85.88px;
+        text-align: center;
     }
 
     #order-button:hover {
@@ -240,14 +241,9 @@
         color: black;
     }
 
-    /* #pasta .item {
-        padding-bottom: 0%;
-    } */
-
     .instructions {
         text-align: center;
         padding-top: 4%
-        padd
     }
 
     .step {
@@ -392,13 +388,43 @@
 
 }
 
-/* phones
-@media screen (min-width: 768px) and (max-width: 1024px) {
-    .container {
+
+/* Tablet 1200px
+
+@media screen and (max-width: 1200px) {
+
+    .logo {    
+        display: block;
+        text-align: center;
+        width: 250px;
+        height: 150px;
+    }
+
+    .nav-container {
         flex-direction: column;
     }
 
-    .super-long-content {
-        display: none;
-    }   
+    header {
+        flex-direction: column;
+    }
+
+    .company-info {
+        flex-direction: column;
+    }
+
+    ul {
+        column-count: 2;
+        padding-inline-start: 0%;
+        margin-right: 18%;
+        margin-left: 18%;
+    }
+}
+
+
+
+@media screen and (max-width: 728px) {
+    .pizza-category>*, .pasta-category>*, .sauce-category>*, .salad-category>* {
+        flex: 0 0 50%;   
+        flex-direction: column;   
+    }
 } */

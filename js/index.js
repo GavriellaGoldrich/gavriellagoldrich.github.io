@@ -202,8 +202,6 @@ window.addEventListener("load",function() {
     showSlides(slideIndex);
     myTimer = setInterval(function(){plusSlides(1)}, 4000);
     slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
-    slideshowContainer.addEventListener('mouseenter', pause)
-    slideshowContainer.addEventListener('mouseleave', resume)
 })
 
 // NEXT AND PREVIOUS CONTROL
